@@ -1,0 +1,144 @@
+/* ==========================================
+   1. ESTILOS GENERALES Y FONDO DE PÁGINA
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fondo con degradado moderno */
+    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    background-attachment: fixed;
+    color: #333333;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezados */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #182848;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #4b6cb7;
+    padding-bottom: 5px;
+}
+
+/* Estilo contenedor general para dar forma de tarjeta a los elementos */
+body > label, 
+body > input, 
+body > button, 
+body > h2, 
+body > p {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* ==========================================
+   2. ESTILOS PARA LOS BOTONES (Cambio de color)
+   ========================================== */
+button {
+    background-color: #007bff; /* Color inicial (Azul) */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    /* Transición suave para el cambio de color */
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Color al pasar el puntero del ratón por encima */
+button:hover {
+    background-color: #28a745; /* Cambia a Verde */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Color al hacer clic en el botón */
+button:active {
+    background-color: #1e7e34; /* Verde más oscuro */
+    transform: scale(0.97); /* Efecto de pulsación */
+}
+
+/* ==========================================
+   3. ESTILOS PARA CAMPOS DE TEXTO E INPUTS
+   ========================================== */
+label {
+    font-weight: 600;
+    color: #ffffff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Estilos de inputs de texto, números, correo, etc. */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efectos al seleccionar un campo de entrada */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Personalización para inputs de color y rango */
+input[type="color"] {
+    height: 40px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="range"] {
+    accent-color: #007bff;
+}
+
+/* Estilos para Radio buttons y Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-left: 8px;
+    cursor: pointer;
+    accent-color: #28a745;
+}
+
+/* Mensajes de resultado (<p>) */
+p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffeb3b;
+    margin-top: 8px;
+}
